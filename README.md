@@ -136,7 +136,7 @@ Modern software teams face a fundamental tension: **speed vs. security**. Tradit
 │   └─────────────────────────────────────┘                          │
 └─────────────────────────────────────────────────────────────────────┘
 ```
-![Architechture Diagram](./devsecops_ss/architechture.png)
+![Architechture Diagram](./devsecops_ss/architechture.png?v=1)
 ---
 
 
