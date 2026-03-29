@@ -1,12 +1,7 @@
 <div align="center">
-
-<img src="https://img.shields.io/badge/STATUS-COMPLETED-00ff9d?style=for-the-badge&labelColor=0d1117&color=00ff9d" />
-<img src="https://img.shields.io/badge/KUBERNETES-DEPLOYED-326CE5?style=for-the-badge&labelColor=0d1117&logo=kubernetes&logoColor=326CE5" />
-<img src="https://img.shields.io/badge/PIPELINE-PASSING-00d4ff?style=for-the-badge&labelColor=0d1117&color=00d4ff" />
-
-<br />
-<br />
-
+ 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:0d1117&height=120&section=header&text=&animation=fadeIn" width="100%"/>
+ 
 ```
 ███╗   ██╗███████╗████████╗███████╗██╗     ██╗██╗  ██╗
 ████╗  ██║██╔════╝╚══██╔══╝██╔════╝██║     ██║╚██╗██╔╝
@@ -15,39 +10,44 @@
 ██║ ╚████║███████╗   ██║   ██║     ███████╗██║██╔╝ ██╗
 ╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝     ╚══════╝╚═╝╚═╝  ╚═╝
 ```
-
-# DevSecOps Pipeline on AWS EKS
-
+ 
+# 🔐 DevSecOps Pipeline on AWS EKS
+ 
 ### *From Code to Cloud — Secured, Automated, Observed*
-
+ 
 <br/>
-
-**Author:** Muhammad Moazzam Hafeez &nbsp;|&nbsp; **University:** FAST NUCES, Islamabad &nbsp;|&nbsp; **Course:** Cloud Computing
-
+ 
+![Status](https://img.shields.io/badge/STATUS-COMPLETED-00ff9d?style=for-the-badge&labelColor=0d1117)
+![Kubernetes](https://img.shields.io/badge/KUBERNETES-DEPLOYED-326CE5?style=for-the-badge&labelColor=0d1117&logo=kubernetes&logoColor=326CE5)
+![Pipeline](https://img.shields.io/badge/PIPELINE-PASSING-00d4ff?style=for-the-badge&labelColor=0d1117)
+![Security](https://img.shields.io/badge/SECURITY-SCANNED-ff6b35?style=for-the-badge&labelColor=0d1117)
+ 
 <br/>
-
-[![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=flat-square&logo=jenkins&logoColor=white)](http://13.63.190.54:8080)
-[![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/moazzam021/netflix)
-[![Kubernetes](https://img.shields.io/badge/AWS-EKS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)](https://aws.amazon.com/eks)
-[![SonarQube](https://img.shields.io/badge/SonarQube-SAST-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)](http://13.63.190.54:9000)
-[![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?style=flat-square&logo=prometheus&logoColor=white)](http://13.63.190.54:9090)
-[![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?style=flat-square&logo=grafana&logoColor=white)](http://13.63.190.54:3000)
-[![ArgoCD](https://img.shields.io/badge/ArgoCD-GitOps-EF7B4D?style=flat-square&logo=argo&logoColor=white)](https://argo-cd.readthedocs.io)
-
+ 
+> 👤 **Muhammad Moazzam Hafeez** &nbsp;·&nbsp; 🏛️ FAST NUCES, Islamabad &nbsp;·&nbsp; ☁️ Cloud Computing
+ 
+<br/>
+ 
+| CI/CD | Container | Orchestration | Security | Monitoring | GitOps |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)](http://13.63.190.54:8080) | [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/r/moazzam021/netflix) | [![EKS](https://img.shields.io/badge/AWS_EKS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)](https://aws.amazon.com/eks) | [![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)](http://13.63.190.54:9000) | [![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)](http://13.63.190.54:9090) | [![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)](https://argo-cd.readthedocs.io) |
+| Pipeline automation | Image registry | 2× t3.medium | SAST + SCA + CVE | Metrics collection | GitOps sync |
+| `:8080` | `moazzam021/netflix` | `eu-north-1` | `:9000` | [![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)](http://13.63.190.54:3000) | Watches manifests |
+ 
 </div>
-
+ 
 ---
-
+ 
 ## 🎬 Project Video Walkthrough
-
+ 
 > **[▶ Watch Full Project Demo on Google Drive](https://drive.google.com/file/d/1qQVecWZPRqlrs116aTCDlWq2_xT5DzME/view?usp=sharing)**
-> 
+>
 > *Complete end-to-end demonstration of the pipeline, security scans, Kubernetes deployment, and monitoring dashboards.*
-
+ 
 ---
-
+ 
 ## 📋 Table of Contents
-
+ 
 - [Executive Summary](#-executive-summary)
 - [Why This Project Matters](#-why-this-project-matters)
 - [Architecture Overview](#-architecture-overview)
@@ -63,33 +63,37 @@
 - [Deployment Evidence](#-deployment-evidence)
 - [Final Results](#-final-results)
 - [Conclusion](#-conclusion)
-
+ 
 ---
-
+ 
 ## 🎯 Executive Summary
-
-This project delivers a **production-grade DevSecOps ecosystem** for a Netflix Clone application. Every commit triggers a fully automated pipeline that performs static code analysis, dependency vulnerability scanning, container security scanning, builds and pushes a Docker image, and deploys to a managed Kubernetes cluster — all while being monitored in real-time.
-
-The project demonstrates that **security is not a final checkpoint** — it is woven into every stage of the software delivery process.
-
+ 
+> *Every commit triggers a fully automated pipeline — code analysis, vulnerability scanning, container hardening, Docker build, Kubernetes deployment, and real-time monitoring. Security is not a final checkpoint — it is woven into every stage.*
+ 
+<div align="center">
+ 
+| 🔍 Code Scanned | 🛡️ Dependencies Checked | 🐳 Image Hardened | ☸️ K8s Deployed | 📊 Monitored |
+|:---:|:---:|:---:|:---:|:---:|
+| 91 source files | 341,007 CVE records | Every Docker layer | 2 × t3.medium nodes | 4 targets · all UP |
+| SonarQube SAST | OWASP Dep-Check | Trivy scanner | AWS EKS · eu-north-1 | Prometheus + Grafana |
+ 
+</div>
+ 
 ---
-
+ 
 ## 💡 Why This Project Matters
-
-Modern software teams face a fundamental tension: **speed vs. security**. Traditional approaches treat security as a final gate — developers write code, build it, then hand it to a security team for review. This is slow, expensive, and often results in vulnerabilities shipping to production.
-
-**DevSecOps solves this** by shifting security left — automating security checks at every stage of the pipeline so issues are caught when they are cheapest to fix: at the code level, not in production.
-
-This project implements that philosophy end-to-end:
-
-| Without DevSecOps | With This Pipeline |
+ 
+Modern software teams face a fundamental tension: **speed vs. security**. Traditional approaches treat security as a final gate — slow, expensive, and too late to fix cheaply.
+ 
+**DevSecOps shifts security left** — catching issues at the code level, not in production.
+ 
+| ❌ Without DevSecOps | ✅ With This Pipeline |
 |---|---|
 | Manual security reviews | Automated SAST on every commit |
 | Unknown dependency vulnerabilities | OWASP scans every library |
 | Unscanned container images | Trivy scans every Docker layer |
 | Manual deployments | GitOps via ArgoCD |
 | No visibility into system health | Real-time Prometheus + Grafana |
-
 ---
 
 ## 🏗️ Architecture Overview
@@ -132,7 +136,7 @@ This project implements that philosophy end-to-end:
 │   └─────────────────────────────────────┘                          │
 └─────────────────────────────────────────────────────────────────────┘
 ```
-
+![Architechture Diagram](./devsecops_ss/architechture.png)
 ---
 
 
@@ -509,7 +513,8 @@ ip-172-31-8-71.eu-north-1.compute.internal     Ready    <none>   3h7m   v1.35.2-
 ### DockerHub — Image Successfully Pushed
 > *Screenshot: DockerHub moazzam021/netflix repository with latest tag*
 
-> *Note: DockerHub screenshot not currently included. The image moazzam021/netflix is publicly available at https://hub.docker.com/r/moazzam021/netflix*
+> ![DockerHub Netflix Repository](./devsecops_ss/docker.png)
+
 
 ---
 
