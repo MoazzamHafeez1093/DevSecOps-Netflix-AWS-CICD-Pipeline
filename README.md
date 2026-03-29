@@ -40,7 +40,7 @@
 
 ## 🎬 Project Video Walkthrough
 
-> **[▶ Watch Full Project Demo on Google Drive](YOUR_DRIVE_LINK_HERE)**
+> **[▶ Watch Full Project Demo on Google Drive](https://drive.google.com/file/d/1qQVecWZPRqlrs116aTCDlWq2_xT5DzME/view?usp=sharing)**
 > 
 > *Complete end-to-end demonstration of the pipeline, security scans, Kubernetes deployment, and monitoring dashboards.*
 
@@ -134,64 +134,6 @@ This project implements that philosophy end-to-end:
 ```
 
 ---
-
-
-flowchart TD
-    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white
-    classDef git fill:#181717,stroke:#ffffff,stroke-width:2px,color:white
-    classDef ci fill:#D33833,stroke:#ffffff,stroke-width:2px,color:white
-    classDef sec fill:#4D618E,stroke:#ffffff,stroke-width:2px,color:white
-    classDef k8s fill:#326CE5,stroke:#ffffff,stroke-width:2px,color:white
-    classDef mon fill:#E6522C,stroke:#ffffff,stroke-width:2px,color:white
-
-    Dev([Developer / VS Code])
-    Repo[(GitHub Repository)]:::git
-    Registry[(DockerHub)]
-
-    subgraph Jenkins_EC2 [EC2 Instance: DevSecOps & Monitoring]
-        CI[Jenkins :8080]:::ci
-        Sonar[SonarQube SAST :9000]:::sec
-        OWASP[OWASP Dependency-Check]:::sec
-        Trivy[Trivy Image Scan]:::sec
-        Docker[Docker Build]
-        
-        Prom[Prometheus :9090]:::mon
-        Graf[Grafana :3000]:::mon
-    end
-
-    subgraph AWS_Cloud [AWS Default VPC: eu-north-1]
-        subgraph EKS [Amazon EKS Cluster]
-            Argo[ArgoCD GitOps]:::k8s
-            
-            subgraph Nodes [Managed Node Group]
-                Node1[Worker Node]:::aws
-                Node2[Worker Node]:::aws
-                App[Netflix App NodePort :30007]
-                Exporter[Node Exporters :9100]
-            end
-        end
-    end
-
-    %% CI/CD Flow
-    Dev -->|Push Code| Repo
-    Repo -->|Trigger Build| CI
-    CI -->|1. Code Scan| Sonar
-    CI -->|2. Dep Scan| OWASP
-    CI -->|3. Vuln Scan| Trivy
-    CI -->|4. Build Image| Docker
-    Docker -->|5. Push Image| Registry
-
-    %% GitOps Flow
-    Argo -.->|6. Watch Manifests| Repo
-    Argo -->|7. Auto-Sync State| App
-    Registry -.->|Pull Image| Nodes
-
-    %% Monitoring Flow
-    Prom -.->|Scrape Metrics :8080| CI
-    Prom -.->|Scrape Metrics :9100| Exporter
-    Prom -->|Visualize Data| Graf
-
-
 
 
 ## 🛠️ Tech Stack
