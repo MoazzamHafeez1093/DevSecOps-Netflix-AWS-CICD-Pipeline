@@ -136,9 +136,7 @@ Modern software teams face a fundamental tension: **speed vs. security**. Tradit
 │   └─────────────────────────────────────┘                          │
 └─────────────────────────────────────────────────────────────────────┘
 ```
-
-![Architecture Diagram](./devsecops_ss/architechture.png)
-
+![Architechture Diagram](./devsecops_ss/architechture.png)
 ---
 
 
@@ -515,7 +513,8 @@ ip-172-31-8-71.eu-north-1.compute.internal     Ready    <none>   3h7m   v1.35.2-
 ### DockerHub — Image Successfully Pushed
 > *Screenshot: DockerHub moazzam021/netflix repository with latest tag*
 
-![DockerHub Netflix Repository](./devsecops_ss/docker.png)
+> ![DockerHub Netflix Repository](./devsecops_ss/docker.png)
+
 
 ---
 
